@@ -81,14 +81,6 @@ public class CategoriesActivity extends AppCompatActivity implements Crime.OnFra
                         getWindow().setStatusBarColor(ContextCompat.getColor(CategoriesActivity.this,
                                 R.color.motivation));
                     }
-                } else if (tab.getPosition() == 3) {
-                    toolbar.setBackgroundColor(ContextCompat.getColor(CategoriesActivity.this, R.color.fiction));
-                    tabLayout.setBackgroundColor(ContextCompat.getColor(CategoriesActivity.this, R.color.fiction));
-
-                    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-                        getWindow().setStatusBarColor(ContextCompat.getColor(CategoriesActivity.this,
-                                R.color.fiction));
-                    }
                 } else if (tab.getPosition() == 2) {
                     toolbar.setBackgroundColor(ContextCompat.getColor(CategoriesActivity.this, R.color.crime));
                     tabLayout.setBackgroundColor(ContextCompat.getColor(CategoriesActivity.this, R.color.crime));
@@ -97,7 +89,15 @@ public class CategoriesActivity extends AppCompatActivity implements Crime.OnFra
                         getWindow().setStatusBarColor(ContextCompat.getColor(CategoriesActivity.this,
                                 R.color.crime));
                     }
-                } else if (tab.getPosition() == 4) {
+                }else if (tab.getPosition() == 3) {
+                    toolbar.setBackgroundColor(ContextCompat.getColor(CategoriesActivity.this, R.color.fiction));
+                    tabLayout.setBackgroundColor(ContextCompat.getColor(CategoriesActivity.this, R.color.fiction));
+
+                    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+                        getWindow().setStatusBarColor(ContextCompat.getColor(CategoriesActivity.this,
+                                R.color.fiction));
+                    }
+                }  else if (tab.getPosition() == 4) {
                     toolbar.setBackgroundColor(ContextCompat.getColor(CategoriesActivity.this, R.color.romance));
                     tabLayout.setBackgroundColor(ContextCompat.getColor(CategoriesActivity.this, R.color.romance));
 
