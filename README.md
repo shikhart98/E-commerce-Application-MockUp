@@ -1,6 +1,6 @@
 # E-commerce-Application-MockUp
 
-It is a mock up E-commerce applicaiton. Includes perfect backend support using PHP, 000webhost. 
+It is a mock up E-commerce application. Includes perfect backend support using PHP, 000webhost. 
 
 ## Sign Up & Sign In screens
 <p float = "left">
