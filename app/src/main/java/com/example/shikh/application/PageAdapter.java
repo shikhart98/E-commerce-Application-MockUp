@@ -31,9 +31,9 @@ public class PageAdapter extends FragmentPagerAdapter {
             case 1:
                 return new Motivation();
             case 2:
-                return new Crime();
-            case 3:
                 return new Fiction();
+            case 3:
+                return new Crime();
             case 4:
                return new romance();
             default:

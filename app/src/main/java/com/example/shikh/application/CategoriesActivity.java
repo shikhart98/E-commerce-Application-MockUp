@@ -81,7 +81,7 @@ public class CategoriesActivity extends AppCompatActivity implements Crime.OnFra
                         getWindow().setStatusBarColor(ContextCompat.getColor(CategoriesActivity.this,
                                 R.color.motivation));
                     }
-                } else if (tab.getPosition() == 2) {
+                } else if (tab.getPosition() == 3) {
                     toolbar.setBackgroundColor(ContextCompat.getColor(CategoriesActivity.this, R.color.crime));
                     tabLayout.setBackgroundColor(ContextCompat.getColor(CategoriesActivity.this, R.color.crime));
 
@@ -89,7 +89,7 @@ public class CategoriesActivity extends AppCompatActivity implements Crime.OnFra
                         getWindow().setStatusBarColor(ContextCompat.getColor(CategoriesActivity.this,
                                 R.color.crime));
                     }
-                }else if (tab.getPosition() == 3) {
+                }else if (tab.getPosition() == 2) {
                     toolbar.setBackgroundColor(ContextCompat.getColor(CategoriesActivity.this, R.color.fiction));
                     tabLayout.setBackgroundColor(ContextCompat.getColor(CategoriesActivity.this, R.color.fiction));
 
