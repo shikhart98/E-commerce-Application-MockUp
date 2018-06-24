@@ -26,7 +26,7 @@ public class Motivation extends Fragment {
         Books = new ArrayList<>();
         DatabaseHelper helper = new DatabaseHelper(getActivity());
         SQLiteDatabase read = helper.getReadableDatabase();
-        Books = BookTable.getAllBooks(read);
+        Books = BookTable.getCategoryBooks(read,"motivation");
     }
 
     @Override

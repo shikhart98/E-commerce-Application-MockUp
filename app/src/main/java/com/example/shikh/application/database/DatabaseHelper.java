@@ -12,7 +12,7 @@ import com.example.shikh.application.database.table.BookTable;
 
 public class DatabaseHelper extends SQLiteOpenHelper {
 
-    public static final String DB_NAME = "books.db";
+    public static final String DB_NAME = "Books.db";
     public static final int DB_VER = 1;
 
     public DatabaseHelper(Context context) {

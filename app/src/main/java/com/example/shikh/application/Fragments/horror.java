@@ -1,9 +1,11 @@
 package com.example.shikh.application.Fragments;
 
 import android.content.Context;
+import android.content.SharedPreferences;
 import android.database.sqlite.SQLiteDatabase;
 import android.net.Uri;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -26,12 +28,9 @@ public class horror extends Fragment {
 
         Books = new ArrayList<>();
         DatabaseHelper helper = new DatabaseHelper(getActivity());
-        SQLiteDatabase write = helper.getWritableDatabase();
         SQLiteDatabase read = helper.getReadableDatabase();
 
-
-        Books = BookTable.getAllBooks(read);
-
+        Books = BookTable.getCategoryBooks(read,"horror");
 
     }
 

@@ -10,15 +10,25 @@ public class book {
     int book_price;
     int book_rating;
     String img_url;
+    String book_category;
 
 
-    public book(String book_name, String book_auth, int book_price, int book_rating, String img_url) {
+    public book(String book_name, String book_auth, int book_price, int book_rating, String img_url, String book_category) {
         this.book_name = book_name;
         this.book_auth = book_auth;
         this.book_price = book_price;
         this.book_rating = book_rating;
         this.img_url = img_url;
+        this.book_category = book_category;
 
+    }
+
+    public String getBook_category() {
+        return book_category;
+    }
+
+    public void setBook_category(String book_category) {
+        this.book_category = book_category;
     }
 
     public String getBook_name() {
